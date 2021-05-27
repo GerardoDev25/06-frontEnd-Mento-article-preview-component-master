@@ -36,18 +36,27 @@ main {
    display: none !important;
 }
 
+/* ! **************************************** */
+/* ***************** images ***************** */
+/* ! **************************************** */
+
 .image {
    width: 100%;
+
    height: 37%;
    background-image: url("/images/drawers.jpg");
    background-size: cover;
 }
 
+/* ! **************************************** */
+/* ***************** *text ***************** */
+/* ! **************************************** */
+
 .text {
    padding: 2rem;
    display: flex;
    flex-direction: column;
-   height: 63%;
+   height: 50%;
 }
 
 .text-chied {
@@ -70,16 +79,28 @@ main {
    color: var(--Desaturated-Dark-Blue);
    font-weight: 500;
 }
+
+/* ! **************************************** */
+/* ****************** card ****************** */
+/* ! **************************************** */
+
+.card-main {
+   height: 13%;
+   border: 1px dotted black;
+}
+
 .card {
+   /* padding: 0 2rem; */
+
    width: 100%;
-   height: 20%;
+   height: 100%;
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
 
 .info {
-   /* border: 1px dotted black; */
+   padding-left: 2rem;
    display: flex;
    justify-content: space-between;
 }
@@ -107,6 +128,7 @@ main {
 }
 
 .share {
+   margin-right: 2rem;
    height: 45px;
    width: 45px;
    background-color: var(--Light-Grayish-Blue);
@@ -125,13 +147,21 @@ main {
 }
 
 .card-share {
-   border: 1px dotted black;
+   color: var(--Desaturated-Dark-Blue);
+   background-color: var(--Very-Dark-Grayish-Blue);
 
    width: 100%;
-   height: 20%;
+   height: 100%;
    display: flex;
    justify-content: space-between;
    align-items: center;
+}
+
+.share-icons {
+   font-size: 1.3rem;
+   letter-spacing: .3rem;
+   font-weight: 700;
+   margin-left: 2rem;
 }
 
 /* ! **************************************** */
