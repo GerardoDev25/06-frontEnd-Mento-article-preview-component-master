@@ -16,7 +16,6 @@ body {
    align-items: center;
 
    background-color: var(--Light-Grayish-Blue);
-
 }
 
 /* ! **************************************** */
@@ -31,6 +30,10 @@ main {
    flex-direction: column;
    border-radius: 1rem;
    overflow: hidden;
+}
+
+.no-active {
+   display: none !important;
 }
 
 .image {
@@ -67,9 +70,6 @@ main {
    color: var(--Desaturated-Dark-Blue);
    font-weight: 500;
 }
-.no-active {
-   display: none;
-}
 .card {
    width: 100%;
    height: 20%;
@@ -94,26 +94,44 @@ main {
    max-width: 100%;
 }
 .info-data .name {
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: var(--Very-Dark-Grayish-Blue);
-    margin-bottom: 0;
+   font-weight: 700;
+   font-size: 1.2rem;
+   color: var(--Very-Dark-Grayish-Blue);
+   margin-bottom: 0;
 }
-.info-data .date{
-    margin: 0;
-    padding-top: .5rem;
+.info-data .date {
+   margin: 0;
+   padding-top: 0.5rem;
+
+   color: var(--Desaturated-Dark-Blue);
 }
 
-.share{
-    height: 45px;
-    width: 45px;
-    background-color: var(--Light-Grayish-Blue);
-    background-image: url('./images/icon-share.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 50%;
-    border-radius: 50%;
-    cursor: pointer;
+.share {
+   height: 45px;
+   width: 45px;
+   background-color: var(--Light-Grayish-Blue);
+   background-image: url("./images/icon-share.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 50%;
+   border-radius: 50%;
+   cursor: pointer;
+
+   transition: background 0.2s ease-out;
+}
+
+.share:hover {
+   background-color: var(--Very-Dark-Grayish-Blue);
+}
+
+.card-share {
+   border: 1px dotted black;
+
+   width: 100%;
+   height: 20%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
 /* ! **************************************** */
