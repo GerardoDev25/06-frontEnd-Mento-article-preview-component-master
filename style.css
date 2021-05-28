@@ -35,10 +35,14 @@ main {
    overflow: hidden;
 }
 
+.no-active-desktop {
+   display: none !important;
+   opacity: 0 !important;
+   transition: opacity .2s ease;
+
+}
 .no-active {
-   /* display: none !important; */
    height: 0 !important;
-   /* padding: 0 !important; */
    overflow: hidden;
    transition: height 0.1s ease;
 }
@@ -154,7 +158,6 @@ main {
 }
 
 .card-share {
-   /* padding-bottom: 2rem; */
 
    color: var(--Desaturated-Dark-Blue);
    background-color: var(--Very-Dark-Grayish-Blue);
@@ -180,6 +183,7 @@ main {
 .share-icons i {
    font-size: 2rem;
    color: var(--Light-Grayish-Blue);
+   cursor: pointer;
 }
 
 /* ! **************************************** */
@@ -262,8 +266,8 @@ main {
       height: 4.5rem;
       border-radius: 1rem;
       position: absolute;
-      top: 34rem;
-      right: 5%;
+      opacity: 0.9;
+      transition: opacity .2s ease;
    }
    .card-share::after {
       content: "";
