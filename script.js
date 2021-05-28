@@ -29,8 +29,6 @@ window.addEventListener("resize", () => {
 // ? evento de hacer clic en el boton de compartir
 share.addEventListener("click", (e) => {
    e.stopPropagation();
-   console.log(share.getBoundingClientRect().top);
-   console.log(cardShare);
    if (window.innerWidth < 791) {
       card.classList.add("no-active");
       cardShare.classList.remove("no-active-desktop");
