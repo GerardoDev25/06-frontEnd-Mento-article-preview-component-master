@@ -7,6 +7,7 @@
 
 html,
 body {
+   box-sizing: content-box;
    height: 100vh;
    width: 100vw;
    font-family: "Manrope", sans-serif;
@@ -181,3 +182,90 @@ main {
  .attribution a {
     color: hsl(228, 45%, 44%);
  } */
+
+/* ! **************************************** */
+/* ***************** desktop ***************** */
+/* ! **************************************** */
+
+@media screen and (min-width: 791px) {
+   main {
+      height: 300px;
+      width: 750px;
+      flex-direction: row;
+   }
+   .image {
+      height: 100%;
+      width: 40%;
+   }
+   .text {
+      height: 100%;
+      width: 60%;
+   }
+   .text-chied {
+      height: 70%;
+      padding-bottom: 0;
+   }
+   .text-1 {
+      font-size: 1.7rem;
+      line-height: 2rem;
+   }
+   .text-1 p {
+      margin-top: 0;
+   }
+   .text-2 {
+      margin-top: 1.2rem;
+   }
+   .text-2 p {
+      font-size: 1rem;
+      margin-bottom: 0;
+   }
+
+   .card-main {
+      height: 30%;
+      /* border: 1px dotted black; */
+      margin-bottom: 1rem;
+   }
+
+   .card {
+      padding-bottom: 0;
+   }
+
+   .image-info {
+      width: 50px;
+      height: 50px;
+   }
+
+   .name {
+      margin-top: 0.5rem;
+   }
+   .share {
+      height: 35px;
+      width: 35px;
+   }
+
+   .card-share {
+      max-width: 17rem;
+      height: 4.5rem;
+      border-radius: 1rem;
+      position: absolute;
+      top: 34rem;
+      right: 5%;
+   }
+   .card-share::after {
+      content: "";
+      background-color: var(--Very-Dark-Grayish-Blue);
+      height: 50%;
+      width: 2rem;
+      margin-top: 2.8rem;
+      margin-right: .7rem;
+      transform: rotate(45deg);
+   }
+   .card-share .share-icons {
+      font-size: 1rem;
+      width: 100%;
+      margin: 0 0.5rem;
+   }
+   .card-share .share {
+      display: none;
+   }
+}
